@@ -24,8 +24,8 @@ spec:
     value: '{{revision}}'
   - name: output-image
     value: quay.io/redhat-user-workloads/releng-test-product-tenant/testrepo-f5bea:on-pr-{{revision}}
-  - name: image-expires-after
-    value: 5d
+  - name: build-source-image
+    value: "true"
   - name: dockerfile
     value: Dockerfile
   pipelineSpec:
